@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
+<style>
+
+@keyframes powerbankanim{
+  0%{top: -25px;}
+  100%{top: 45px;}
+}
+
+body{
+  background: radial-gradient(#051626 40%,#020A15);
+  padding: 0;
+  margin: 0;
+}
+main{
+  /*box-shadow: #051626 0px 0px 100px 10px inset;*/
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url("https://pp.userapi.com/c844724/v844724506/126641/TmgPKzW8apw.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+.product{
+  /*outline: 3px solid orange;*/
+  /*background: black;*/
+  position: absolute;
+  left: 320px;
+  top: 50px;
+  width: 700px;
+  height: 700px;
+}
+.product:hover>img{
+  animation: powerbankanim 1s ease-in-out 0s infinite;
+  animation-direction: alternate;
+  top: 0px;
+}
+.product>.name{
+  font-size: 70px;
+  color: white;
+  position: absolute;
+  bottom: 55px;
+  left: 40px;
+}
+.product>.cost{
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  left: 45px;
+  bottom: 15px;
+
+}
+.product>img{
+  top: 1px;
+  transition: 2s linear;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+.buy{
+  user-select:none;
+  transition: .3s;
+  padding-top: 4px;
+  padding-bottom: 8px;
+  position: absolute;
+  bottom: 80px;
+  left: 420px;
+  font-size: 50px;
+  color: white;
+  font-family: Roboto Slab, sans-serif;
+  border: 6px solid #F0D000;
+  font-weight: bold;
+  border-radius: 50px;
+  width: 450px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.buy:hover{
+  background: #F0D000;
+  color: black;
+}
+@import url('https://fonts.googleapis.com/css?family=Cuprum');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+
+.core_text{
+  position:absolute;
+  color:white;
+  font-size: 40px;
+  width: 900px;
+
+  font-family: 'Playfair Display', serif;
+}
+.first_text{
+  font-weight: 590;
+  right: 500px;
+  top: 170px;
+}
+.second_text{
+  right: 470px;
+  top: 570px;
+}
+.core_text::selection{
+  background: rgb(0,0,0,0.60);				/*		чёрный фон при выделении текста */
+}
+.product>.name::selection{
+  background: rgb(0,0,0,0.60);
+}
+.product>.cost::selection{
+  background: rgb(0,0,0,0.60);
+}
+
+
+.full_emblem{
+  position:absolute;
+  top: 40px;
+  right: 170px;
+  width: 400px;
+  height: 100px;
+
+}
+.full_emblem>.emblem{
+  display:block;
+  height: 100%;
+  width: auto;
+  position:absolute;
+
+}
+.full_emblem>.emblem_text{
+  right: 0;
+  top: 20%;
+  height: 60%;
+  width: auto;
+  display:block;
+  position:absolute;
+}
+/*.block{
+  float:right;
+  width: 200px;
+  height: 100px;
+}*/
+</style>
+  </head>
+  <body>
+    <main>
+    <div class="product">
+      <img src="https://pp.userapi.com/c849524/v849524506/b358d/aFaDYHY8c2w.jpg" alt="товар">
+      <div class="name">
+        Xiaomi Powerbank
+      </div>
+      <div class="cost">
+        2800 ₽
+      </div>
+    </div>
+    <div class="buy">
+      ПРИОБРЕСТИ
+    </div>
+    <div class="first_text core_text"><div class="block"></div>После работы или учебы твой телефон уже на нуле, а ты только хотел расслабиться и посидеть в социальных сетях, или может быть ты путешественник и впереди еще много перелетов, переездов и прочей суеты и телефон садится всегда в самый не подходящий момент :( </div>
+    <div class="second_text core_text">Исправить всё просто: не занимая много места, power bank способен зарядить телефон 4-5 раз! Заряжать можно не только смартфон, а еще и все устроиства, имеющие micro-USB порт)</div>
+    <div class="full_emblem">
+      <img src="emblem.jpg" alt="logo" class="emblem"/>
+      <img src="emblem_text.jpg" alt="logo_text" class="emblem_text"/>
+    </div>
+  </main>
+  </body>
+</html>

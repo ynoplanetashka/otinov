@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+
+    body{
+      background: radial-gradient(#051626 40%,#020A15);
+      padding: 0;
+      margin: 0;
+    }
+    main{
+      /*box-shadow: #051626 0px 0px 100px 10px inset;*/
+      height: 100vh;
+      width: 100%;
+      margin: 0 auto;
+      background-image: url("https://pp.userapi.com/c844724/v844724506/126641/TmgPKzW8apw.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    form{
+      box-sizing: border-box;
+      margin: 0 auto;
+      width: 1280px;
+      /*background: black;*/
+      height: 100%;
+      padding-top: 150px;
+
+    }
+
+    .label{
+      width: 900px;
+      margin: 40px auto;
+      height: 80px;
+      display: block;
+      border-radius: 35px;
+      font-size: 60px;
+      background: rgb(154,205,255,0.65);
+      padding-left: 35px;
+      box-sizing: border-box;
+      outline: none;
+      border: 0;
+      transition: .4s;
+      color: grey;
+      font-family: sans-serif;
+    }
+
+    .label:hover{
+      background : rgb(154,205,255,0.95);
+      box-shadow: 0px -10px 10px 5px rgb(122,188,255) inset;
+    }
+
+    #l1{
+      margin-top: 0;
+      /*padding-top: 300px;*/
+    }
+
+    #butn{
+      font-weight: bold;
+      font-family: sans-serif;
+      font-size: 30px;
+      transition: .2s linear;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      background: rgb(61,143,219,0.8);
+      color: black;
+      outline: none;
+      border: 0;
+      margin: 100px auto;
+      display: block;
+    }
+
+    #butn:hover{
+      /*box-shadow: -20px -20px 10px 5px rgb(41,96,148,0.6) inset;*/
+      background: rgb(33,92,148);
+    }
+
+    @media screen and (max-width: 1400px){
+      main{
+        width: 100vw;
+        height: 100vh;
+
+      }
+      form{
+        width: 100vw;
+        height: 100vh;
+      }
+    }
+
+    @media screen and (max-width: 1000px){
+      .label{
+        width: 80% !important;
+      }
+    }
+    @media screen and (max-width: 700px){
+        .label{
+          font-size: 40px;
+
+        }
+        form{
+          padding-top: 50px;
+        }
+    }
+    @media screen and (max-width: 450px){
+      .label{
+        margin-bottom: 10px;
+        font-size: 30px;
+        height: 70px;
+        padding-left: 10px;
+      }
+      #butn{
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 50vw;
+        height: 50vw;
+        font-size: 25px;
+      }
+    }
+    @media screen and (max-width: 350px){
+      #butn{
+        font-size: 22px;
+      }
+      .label{
+        font-size: 26px;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <main>
+    <form action="" method="post">
+      <input type="email" class="label" placeholder="email" id="l1">
+      <input type="text" class="label" placeholder="ФИО" id="l2">
+      <input type="tel" class="label" placeholder="Номер телефона" id="l3">
+      <input type="button" class="" id="butn" value="ОТПРАВИТЬ">
+
+    </form>
+
+    </main>
+  </body>
+</html>
