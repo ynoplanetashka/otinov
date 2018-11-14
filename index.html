@@ -46,12 +46,13 @@
       outline: none;
       border: 0;
       -webkit-transition: .4s;
-      transition: .4s;
+      transition: .6s;
       color: grey;
       font-family: sans-serif;
     }
 
     .label:hover{
+      transition: .4s;
       background : rgb(154,205,255,0.95);
       -webkit-box-shadow: 0px -10px 10px 5px rgb(122,188,255) inset;
               box-shadow: 0px -10px 10px 5px rgb(122,188,255) inset;
@@ -84,6 +85,8 @@
       background: #215c94;
     }
 
+
+
     @media screen and (max-width: 1400px){
       main{
         width: 100vw;
@@ -98,7 +101,7 @@
 
     @media screen and (max-width: 1000px){
       .label{
-        width: 80% !important;
+        width: 90% !important;
       }
     }
     @media screen and (max-width: 700px){
@@ -141,6 +144,11 @@
         height: 40px;
       }
     }
+
+    .bad_label{
+      transition: none !important;
+      box-shadow: 0px 0px 20px 10px red inset;
+    }
     </style>
   </head>
   <body>
@@ -154,5 +162,21 @@
     </form>
 
     </main>
+    <script type="text/javascript">
+      document.getElementById("butn").onclick = function(){
+        var str = document.getElementsByClassName("label")[2].value;
+        if (!(((str[0] == "+" && (str[1] == "7" || str[1] == "8") && str.length == 12) || ((str[0] == "7" || str[0] == "8") && str.length == 11))))
+        {
+          document.getElementsByClassName("label")[2].classList.add("bad_label");
+          setInterval(function(){document.getElementsByClassName("label")[2].classList.remove("bad_label");}, 0);
+        }
+        str = document.getElementsByClassName("label")[0].value;
+        if (str.indexOf('.', 0) == -1 || str.indexOf('@', 0) == -1 || str.length < 6)
+        {
+          document.getElementsByClassName("label")[0].classList.add("bad_label");
+          setInterval(function(){document.getElementsByClassName("label")[0].classList.remove("bad_label");}, 0);
+        }
+      };
+    </script>
   </body>
 </html>
