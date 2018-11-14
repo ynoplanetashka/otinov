@@ -176,6 +176,12 @@
           document.getElementsByClassName("label")[0].classList.add("bad_label");
           setInterval(function(){document.getElementsByClassName("label")[0].classList.remove("bad_label");}, 0);
         }
+        str = document.getElementsByClassName("label")[1].value;
+        if (str.length < 2)
+        {
+          document.getElementsByClassName("label")[1].classList.add("bad_label");
+          setInterval(function(){document.getElementsByClassName("label")[1].classList.remove("bad_label");}, 0);
+        }
       };
     </script>
   </body>
