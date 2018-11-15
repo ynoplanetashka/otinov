@@ -234,6 +234,15 @@ body{
     order: 0;
 
   }
+  .core_text::selection{
+    background: black !important;				/*		чёрный фон при выделении текста */
+  }
+  .product>.name::selection{
+    background: black !important;
+  }
+  .product>.cost::selection{
+    background: black !important;
+  }
   .full_emblem>.emblem{
     float:left;
   }
@@ -326,5 +335,8 @@ body{
       <img src="emblem_text.jpg" alt="logo_text" class="emblem_text"/>
     </div>
   </main>
+  <script type="text/javascript">
+    document.getElementsByClassName("buy")[0].onclick = function (){document.location.href = "https://ynoplanetashka.github.io/otinov/index.html";};
+  </script>
   </body>
 </html>
